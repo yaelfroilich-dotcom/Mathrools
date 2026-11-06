@@ -283,4 +283,1139 @@
     .song-card-title {
       font-size: 1.15rem;
       font-weight: 700;
-      color: #b
+      color: #b45309;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .song-lyrics {
+      font-size: 1.2rem;
+      line-height: 1.75;
+      color: #78350f;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .lyric-line {
+      padding: 4px 8px;
+      border-radius: 8px;
+      transition: all 0.3s;
+    }
+
+    .lyric-line.speaking-now {
+      background: #fde047;
+      color: #451a03;
+      transform: scale(1.02);
+      box-shadow: 0 2px 8px rgba(234, 179, 8, 0.3);
+    }
+
+    .story-card {
+      background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+      border: 3px solid #bae6fd;
+      border-radius: 22px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .story-card-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #0369a1;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .story-text {
+      font-size: 1.12rem;
+      line-height: 1.65;
+      color: #0c4a6e;
+      margin-bottom: 14px;
+    }
+
+    .rule-secret-box {
+      background: white;
+      border-right: 5px solid #0284c7;
+      padding: 12px 14px;
+      border-radius: 12px;
+      font-weight: 600;
+      color: #1e293b;
+      font-size: 1.02rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Narrator Audio Bar */
+    .narrator-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 12px;
+      flex-wrap: wrap;
+    }
+
+    .speak-btn {
+      background: linear-gradient(135deg, #f59e0b, #ea580c);
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 12px rgba(234, 88, 12, 0.3);
+      transition: all 0.2s;
+    }
+
+    .speak-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(234, 88, 12, 0.4);
+    }
+
+    .speak-btn.playing {
+      background: linear-gradient(135deg, #ef4444, #dc2626);
+      animation: gentleBounce 1s infinite;
+    }
+
+    @keyframes gentleBounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-3px); }
+    }
+
+    /* Interactive Visual Lab */
+    .visual-lab {
+      background: #f8fafc;
+      border: 3px dashed #cbd5e1;
+      border-radius: 22px;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .lab-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #4f46e5;
+      margin-bottom: 12px;
+    }
+
+    .lab-stage {
+      min-height: 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      padding: 12px;
+    }
+
+    .math-pill-display {
+      font-size: 1.7rem;
+      font-weight: 700;
+      background: white;
+      padding: 12px 26px;
+      border-radius: 18px;
+      border: 3px solid #e0e7ff;
+      color: #312e81;
+      direction: ltr;
+      display: inline-block;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: all 0.35s ease;
+    }
+
+    .lab-action-btn {
+      background: #6366f1;
+      color: white;
+      border: none;
+      padding: 10px 22px;
+      border-radius: 14px;
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .lab-action-btn:hover {
+      background: #4f46e5;
+      transform: scale(1.04);
+    }
+
+    /* Practice Section */
+    .practice-trigger-wrap {
+      text-align: center;
+      margin: 16px 0;
+    }
+
+    .start-practice-btn {
+      background: linear-gradient(135deg, #10b981, #059669);
+      color: white;
+      border: none;
+      padding: 16px 32px;
+      border-radius: 999px;
+      font-family: inherit;
+      font-size: 1.25rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(16, 185, 129, 0.35);
+      transition: all 0.2s;
+    }
+
+    .start-practice-btn:hover {
+      transform: translateY(-2px) scale(1.02);
+    }
+
+    .practice-arena {
+      background: linear-gradient(135deg, #fdf4ff 0%, #fae8ff 100%);
+      border: 3px solid #f0abfc;
+      border-radius: 24px;
+      padding: 22px;
+      margin-top: 20px;
+      display: none;
+    }
+
+    .practice-arena.visible {
+      display: block;
+      animation: fadeIn 0.35s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .question-text {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #701a75;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+
+    .options-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .option-btn {
+      background: white;
+      border: 3px solid #e879f9;
+      border-radius: 16px;
+      padding: 14px;
+      font-family: inherit;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #4a044e;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .option-btn:hover {
+      background: #fdf4ff;
+      transform: translateY(-2px);
+    }
+
+    .option-btn.correct {
+      background: #dcfce7;
+      border-color: #22c55e;
+      color: #14532d;
+    }
+
+    .option-btn.wrong {
+      background: #fee2e2;
+      border-color: #ef4444;
+      color: #7f1d1d;
+    }
+
+    .feedback-banner {
+      padding: 14px;
+      border-radius: 14px;
+      font-weight: 700;
+      text-align: center;
+      font-size: 1.1rem;
+      display: none;
+      margin-top: 10px;
+    }
+
+    .next-station-btn {
+      background: linear-gradient(135deg, #6366f1, #ec4899);
+      color: white;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 999px;
+      font-family: inherit;
+      font-size: 1.2rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: none;
+      margin: 18px auto 0;
+      box-shadow: 0 6px 18px rgba(99, 102, 241, 0.35);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="app-container">
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="brand-title">
+        <span>🏰</span>
+        <span>ממלכת החשבון הקסומה</span>
+      </div>
+      <div class="controls-group">
+        <button class="pill-btn" id="toggleVoiceStudioBtn" onclick="toggleVoiceDrawer()">
+          🎙️ אולפן קול והגדרות קריינות
+        </button>
+        <div class="stars-badge">
+          <span>⭐</span>
+          <span id="starsCount">0</span>
+          <span>כוכבים</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Voice Studio Drawer (Solves Robotic TTS + Allows Custom Recording) -->
+    <div class="voice-drawer" id="voiceDrawer">
+      <div class="voice-drawer-row">
+        <div class="voice-control-item">
+          <label for="voiceSelect">קול קריין:</label>
+          <select id="voiceSelect" onchange="saveVoicePrefs()"></select>
+        </div>
+        <div class="voice-control-item">
+          <label for="rateRange">קצב דיבור (<span id="rateVal">0.92</span>):</label>
+          <input type="range" id="rateRange" min="0.75" max="1.15" step="0.03" value="0.92" oninput="updateVoiceSliders()" />
+        </div>
+        <div class="voice-control-item">
+          <label for="pitchRange">רכות וגובה (<span id="pitchVal">1.05</span>):</label>
+          <input type="range" id="pitchRange" min="0.85" max="1.25" step="0.05" value="1.05" oninput="updateVoiceSliders()" />
+        </div>
+        <div class="voice-control-item">
+          <label>
+            <input type="checkbox" id="bgMelodyCheck" checked />
+            מנגינת רקע עדינה בזמן הקראה 🎵
+          </label>
+        </div>
+      </div>
+
+      <!-- Parent / Kid Real Human Voice Recorder -->
+      <div class="record-panel">
+        <div>
+          <strong>💡 רוצים קול אנושי ב-100%?</strong>
+          <span>אפשר להקליט את עצמכם או את הילד/ה שרים את השיר של התחנה הזו!</span>
+        </div>
+        <div style="display:flex; gap:8px; align-items:center;">
+          <button class="record-btn" id="recordBtn" onclick="toggleRecording()">
+            🎤 הקלט קול אנושי לתחנה זו
+          </button>
+          <button class="pill-btn" id="deleteRecordBtn" style="background:#ef4444; display:none;" onclick="deleteCustomRecording()">
+            🗑️ מחק הקלטה
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stations Navigation -->
+    <div class="stations-nav" id="stationsNav"></div>
+
+    <!-- Main Station Stage -->
+    <div class="stage-content">
+      <div class="station-header">
+        <div class="station-badge" id="stationBadge">תחנה 1 מתוך 8</div>
+        <h1 class="station-title" id="stationTitle"></h1>
+      </div>
+
+      <div class="story-song-grid">
+        <!-- Song Card -->
+        <div class="song-card">
+          <div>
+            <div class="song-card-title">🎵 שיר הקסם של הכלל</div>
+            <div class="song-lyrics" id="songLyrics"></div>
+          </div>
+          <div class="narrator-bar">
+            <button class="speak-btn" id="speakBtn" onclick="toggleNarration()">
+              🔊 תקריא לי בחיוך ובקצב!
+            </button>
+          </div>
+        </div>
+
+        <!-- Story & Logic Card -->
+        <div class="story-card">
+          <div>
+            <div class="story-card-title">📖 הסיפור שמאחורי הכלל</div>
+            <p class="story-text" id="storyText"></p>
+          </div>
+          <div class="rule-secret-box" id="ruleSecret"></div>
+        </div>
+      </div>
+
+      <!-- Visual Interactive Lab -->
+      <div class="visual-lab">
+        <div class="lab-title">✨ מעבדת הקסם – לחצו וראו איך הכלל עובד בעיניים!</div>
+        <div class="lab-stage" id="labStage"></div>
+      </div>
+
+      <!-- Practice Trigger -->
+      <div class="practice-trigger-wrap" id="practiceTriggerWrap">
+        <button class="start-practice-btn" onclick="openPracticeArena()">
+          הבנתי את הכלל! בואו ננסה תרגיל הצלחה 🚀
+        </button>
+      </div>
+
+      <!-- Practice Arena -->
+      <div class="practice-arena" id="practiceArena">
+        <div class="question-text" id="questionText"></div>
+        <div class="options-grid" id="optionsGrid"></div>
+        <div class="feedback-banner" id="feedbackBanner"></div>
+        <button class="next-station-btn" id="nextStationBtn" onclick="goToNextStation()">
+          איזה אלופים! ממשיכים לתחנה הבאה ⬅️
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 8 Stations with SEPARATE phonetic natural speech scripts (phoneticChunks)
+    // so the browser TTS speaks naturally with pauses, warmth, and zero robotic math symbols!
+    const STATIONS = [
+      {
+        id: 1,
+        icon: "🔄",
+        name: "חוק החילוף",
+        title: "תחנה 1: חוק החילוף הקסום",
+        lyrics: [
+          "אִם נַחְלִיף אֶת הַמָּקוֹם – הַסְּכוּם יֹאמַר שָׁלוֹם!",
+          "בְּחִיבּוּר וְגַם בְּכֶפֶל, אֵין שׁוּם בִּלְבּוּל וָסֵבֶל,",
+          "שְׁלוֹשָׁה וְעוֹד חֲמִשָּׁה, אוֹ חֲמִשָּׁה וְעוֹד שְׁלוֹשָׁה,",
+          "הַתּוֹצָאָה תָּמִיד זֵהָה – שְׁמוֹנֶה בְּשִׂמְחָה רַבָּה!"
+        ],
+        // Phonetic natural script broken into breath-sized sentences for human-like flow
+        phoneticChunks: [
+          { text: "שיר הקסם של חוק החילוף!", lyricIndex: -1, pause: 450 },
+          { text: "אם נחליף את המקום, הסכום יאמר שלום!", lyricIndex: 0, pause: 350 },
+          { text: "בחיבור וגם בכפל, אין שום בלבול וסבל.", lyricIndex: 1, pause: 350 },
+          { text: "שלושה ועוד חמישה, או חמישה ועוד שלושה,", lyricIndex: 2, pause: 350 },
+          { text: "התוצאה תמיד זהה, שמונה בשמחה רבה!", lyricIndex: 3, pause: 550 },
+          { text: "והנה הסוד החשוב: בחיבור ובכפל מותר להחליף מקומות, אבל בחיסור ובחילוק אסור להחליף!", lyricIndex: -1, pause: 300 }
+        ],
+        story: "דמיינו שיש לכם ביד ימין 3 תפוחים אדומים וביד שמאל 5 תפוחים ירוקים. אם תחליפו ידיים, האם מספר התפוחים בסלסילה ישתנה? בכלל לא! עדיין יהיו לנו 8 תפוחים מתוקים.",
+        secret: "💡 הכלל בקצרה: בחיבור (+) ובכפל (×) מותר להחליף את סדר המספרים. בחיסור (–) ובחילוק (÷) הסדר קובע ואסור להחליף!",
+        labType: "commutative",
+        questions: [
+          {
+            q: "אם ידוע כי 7 × 4 = 28, כמה יהיה 4 × 7?",
+            options: ["28 בדיוק!", "21", "11"],
+            correct: 0,
+            praise: "בול! לפי חוק החילוף בכפל, החלפנו מקום והתוצאה נשארה 28!"
+          },
+          {
+            q: "באיזו פעולה אסור להשתמש בחוק החילוף?",
+            options: ["חיבור (+)", "כפל (×)", "חיסור (–)"],
+            correct: 2,
+            praise: "אלופים! בחיסור ובחילוק אסור להחליף מקומות."
+          }
+        ]
+      },
+      {
+        id: 2,
+        icon: "🤝",
+        name: "קיבוץ ופילוג",
+        title: "תחנה 2: חברים טובים – קיבוץ ופילוג",
+        lyrics: [
+          "מִסְפָּרִים שֶׁמַּשְׁלִימִים לַעֲשֶׂרֶת עֲגֻלָּה,",
+          "נְחַבֵּר אוֹתָם יַחְדָּו וְהַדֶּרֶךְ כֹּה קַלָּה!",
+          "וְאִם מִסְפָּר גָּדוֹל מִדַּי וְקָשֶׁה לְהַכְפִּילוֹ,",
+          "נְפָרֵק לַעֲשָׂרוֹת וְיָחִידוֹת – וּנְפַצֵּחַ אֶת כֻּלּוֹ!"
+        ],
+        phoneticChunks: [
+          { text: "תחנה שנייה, חוק הקיבוץ וחוק הפילוג!", lyricIndex: -1, pause: 450 },
+          { text: "מספרים שמשלימים לעשרת עגולה,", lyricIndex: 0, pause: 300 },
+          { text: "נחבר אותם יחדיו, והדרך כה קלה!", lyricIndex: 1, pause: 400 },
+          { text: "ואם מספר גדול מדי וקשה להכפילו,", lyricIndex: 2, pause: 300 },
+          { text: "נפרק לעשרות ויחידות, ונפצח את כולו!", lyricIndex: 3, pause: 500 },
+          { text: "זכרו תמיד: הכי קל לחבר קודם זוגות שנותנים עשר עגול, ולפרק מספרים גדולים לחלקים קטנים!", lyricIndex: -1, pause: 300 }
+        ],
+        story: "כשיש תרגיל ארוך כמו 17 + 8 + 2, למה להתאמץ? 8 ו-2 הם חברים הכי טובים שנותנים ביחד 10 עגול! נחבר קודם אותם ל-10, ואז נוסיף 17 בשנייה אחת ונקבל 27.",
+        secret: "💡 הכלל בקצרה: קיבוץ = מחברים קודם זוגות נוחים לעשרת עגולה. פילוג = מפרקים מספר דו-ספרתי לעשרות וליחידות וכופלים כל חלק בנפרד.",
+        labType: "associative",
+        questions: [
+          {
+            q: "בתרגיל 19 + 6 + 4, איזה זוג הכי חכם לחבר קודם?",
+            options: ["6 + 4 שנותנים 10 עגול", "19 + 6", "אין הבדל בנוחות"],
+            correct: 0,
+            praise: "חשיבה של אלופים! 6 ועוד 4 הם 10, ויחד עם 19 מקבלים מיד 29!"
+          },
+          {
+            q: "איך נפרק את התרגיל 13 × 5 לפי חוק הפילוג?",
+            options: ["(10 × 5) + (3 × 5)", "(10 + 5) × 3", "13 + 5"],
+            correct: 0,
+            praise: "מדהים! פירקנו את 13 ל-10 ול-3, כפלנו כל אחד ב-5 וחיברנו: 50 ועוד 15 שווה 65!"
+          }
+        ]
+      },
+      {
+        id: 3,
+        icon: "👑",
+        name: "המלכים 0 ו-1",
+        title: "תחנה 3: מלכי החשבון – האפס והאחד",
+        lyrics: [
+          "הָאֶפֶס בְּחִיבּוּר שׁוֹמֵר עַל הַמִּסְפָּר,",
+          "אַךְ בְּכֶפֶל הוּא בּוֹלֵעַ – וְשׁוּם דָּבָר לֹא נִשְׁאַר!",
+          "הָאֶחָד הוּא מַרְאַת קֶסֶם בְּכֶפֶל וּבְחִלּוּק,",
+          "וְלַחְלֹק בְּאֶפֶס? זֶה אָסוּר עַל פִּי הַחֹק!"
+        ],
+        phoneticChunks: [
+          { text: "תחנה שלישית, מלכי החשבון, האפס והאחד!", lyricIndex: -1, pause: 450 },
+          { text: "האפס בחיבור שומר על המספר,", lyricIndex: 0, pause: 320 },
+          { text: "אך בכפל הוא בולע, ושום דבר לא נשאר!", lyricIndex: 1, pause: 400 },
+          { text: "האחד הוא מראת קסם בכפל ובחילוק,", lyricIndex: 2, pause: 320 },
+          { text: "ולחלוק באפס? זה אסור על פי החוק!", lyricIndex: 3, pause: 500 }
+        ],
+        story: "בממלכת החשבון יש שני קוסמים: הקוסם 1 בכפל הוא כמו מראה – כל מספר שמביט בו נשאר בדיוק אותו דבר. הקוסם 0 בכפל הופך כל מספר לאפס, אפילו מיליון! ורק כלל זהב אחד שומר על הממלכה: לעולם לא מחלקים באפס.",
+        secret: "💡 הכלל בקצרה: כל מספר כפול 0 שווה 0. כל מספר כפול 1 נשאר עצמו. ואסור לחלק ב-0!",
+        labType: "zeroOne",
+        questions: [
+          {
+            q: "כמה הם 1,250 × 0 ?",
+            options: ["0", "1,250", "1"],
+            correct: 0,
+            praise: "נכון מאוד! האפס בכפל בולע אפילו מספר ענק כמו 1,250 והופך אותו ל-0!"
+          },
+          {
+            q: "כמה הם 48 ÷ 1 ?",
+            options: ["48", "1", "0"],
+            correct: 0,
+            praise: "מעולה! חילוק וכפל ב-1 משאירים את המספר בדיוק כמו שהוא."
+          }
+        ]
+      },
+      {
+        id: 4,
+        icon: "🚦",
+        name: "סדר פעולות",
+        title: "תחנה 4: רמזור סדר פעולות החשבון",
+        lyrics: [
+          "סוֹגְרַיִם הֵם הַמֶּלֶךְ – פּוֹתְרִים אוֹתָם רִאשׁוֹן!",
+          "אַחַר כָּךְ כֶּפֶל וְחִלּוּק צוֹעֲדִים בְּגָאוֹן,",
+          "וּבַסּוֹף חִיבּוּר חִסּוּר, מִשְּׂמֹאל וְעַד יָמִין,",
+          "כְּשֶׁפּוֹעֲלִים לְפִי הַסֵּדֶר – הַכֹּל פָּשׁוּט וּמַדְהִים!"
+        ],
+        phoneticChunks: [
+          { text: "תחנה רביעית, סדר פעולות החשבון!", lyricIndex: -1, pause: 450 },
+          { text: "סוגריים הם המלך, פותרים אותם ראשון!", lyricIndex: 0, pause: 350 },
+          { text: "אחר כך כפל וחילוק צועדים בגאון,", lyricIndex: 1, pause: 350 },
+          { text: "ובסוף חיבור וחיסור, משמאל ועד ימין,", lyricIndex: 2, pause: 350 },
+          { text: "כשפועלים לפי הסדר, הכול פשוט ומדהים!", lyricIndex: 3, pause: 500 }
+        ],
+        story: "תארו לכם תור לרכבת הרים: למי שיש כרטיס VIP של 'סוגריים ( )' נכנס ראשון בלי לחכות! אחריו נכנסים כפל וחילוק, ורק בסוף נכנסים חיבור וחיסור בנחת משמאל לימין.",
+        secret: "💡 סדר הזהב: 1. סוגריים ( ) ⬅️ 2. כפל וחילוק (× ÷) ⬅️ 3. חיבור וחיסור (+ –) משמאל לימין.",
+        labType: "orderOfOps",
+        questions: [
+          {
+            q: "בתרגיל 10 + 2 × 4, מה פותרים קודם ומה התוצאה?",
+            options: ["קודם כפל (2×4=8) ואז 10+8 = 18", "קודם חיבור (10+2=12) ואז 48", "לא משנה הסדר"],
+            correct: 0,
+            praise: "אלופים! כפל קודם לחיבור, ולכן 2 כפול 4 הם 8, ועוד 10 שווה 18!"
+          },
+          {
+            q: "בתרגיל (8 - 3) × 4, מה פותרים קודם?",
+            options: ["את הסוגריים (8 - 3 = 5) והתוצאה 20", "את הכפל (3 × 4)", "מחברים הכול"],
+            correct: 0,
+            praise: "מדויק! הסוגריים הם המלך – פותרים 8 פחות 3 שווה 5, וכפול 4 שווה 20!"
+          }
+        ]
+      },
+      {
+        id: 5,
+        icon: "🕵️",
+        name: "בלשי ההתחלקות",
+        title: "תחנה 5: בלשי סימני ההתחלקות",
+        lyrics: [
+          "סִפְרָה זוּגִית בַּסּוֹף? מִתְחַלֵּק הוּא בִּשְׁנַיִם!",
+          "אֶפֶס אוֹ חָמֵשׁ? מִתְחַלֵּק בְּחָמֵשׁ בְּרֶגַע וָחֵצִי!",
+          "אֶפֶס עָגֹל בַּקָּצֶה? לְעֶשֶׂר יֵשׁ כַּרְטִיס כְּנִיסָה,",
+          "וְאִם סְכוּם הַסְּפָרוֹת מִתְחַלֵּק בְּשָׁלוֹשׁ – הַחִידָה פְּתוּרָה!"
+        ],
+        phoneticChunks: [
+          { text: "תחנה חמישית, בלשי סימני ההתחלקות!", lyricIndex: -1, pause: 450 },
+          { text: "ספרה זוגית בסוף? מתחלק הוא בשניים!", lyricIndex: 0, pause: 350 },
+          { text: "אפס או חמש? מתחלק בחמש ברגע!", lyricIndex: 1, pause: 350 },
+          { text: "אפס עגול בקצה? לעשר יש כרטיס כניסה,", lyricIndex: 2, pause: 350 },
+          { text: "ואם סכום הספרות מתחלק בשלוש, החידה פתורה!", lyricIndex: 3, pause: 500 }
+        ],
+        story: "בלש חשבון אמיתי לא צריך לחשב הכול – הוא רק מציץ בספרה האחרונה (ספרת האחדות) או מחבר את הספרות יחד, ומיד מגלה אם המספר מתחלק בלי שארית!",
+        secret: "💡 הכלל בקצרה: ב-2 (סוף זוגי), ב-5 (נגמר ב-5 או 0), ב-10 (נגמר ב-0), ב-3 (סכום הספרות מתחלק ב-3).",
+        labType: "divisibility",
+        questions: [
+          {
+            q: "האם המספר 123 מתחלק ב-3 ללא שארית?",
+            options: ["כן! כי סכום הספרות (1+2+3=6) מתחלק ב-3", "לא, כי הוא מסתיים ב-3", "אי אפשר לדעת"],
+            correct: 0,
+            praise: "בלשים מלידה! 1 ועוד 2 ועוד 3 שווה 6, ו-6 מתחלק ב-3!"
+          },
+          {
+            q: "איזה מספר מתחלק גם ב-2, גם ב-5 וגם ב-10?",
+            options: ["70 (מסתיים ב-0)", "45", "32"],
+            correct: 0,
+            praise: "בול! מספר שמסתיים ב-0 מתחלק גם ב-10, גם ב-5 וגם ב-2!"
+          }
+        ]
+      },
+      {
+        id: 6,
+        icon: "🍕",
+        name: "עולם השברים",
+        title: "תחנה 6: מסיבת הפיצה של השברים",
+        lyrics: [
+          "לְמַטָּה הַמְּכַנֶּה מְסַפֵּר לְכַמָּה חֲלָקִים חִלַּקְנוּ,",
+          "לְמַעְלָה הַמּוֹנֶה מוֹנֶה כַּמָּה מְשֻׁלָּשִׁים לָקַחְנוּ!",
+          "בְּחִיבּוּר שְׁבָרִים חוֹבָה מְכַנֶּה מְשֻׁתָּף וְאָחִיד,",
+          "וּבְכֶפֶל? מוֹנֶה בְּמוֹנֶה וּמְכַנֶּה בִּמְכַנֶּה תָּמִיד!"
+        ],
+        phoneticChunks: [
+          { text: "תחנה שישית, מסיבת הפיצה של השברים!", lyricIndex: -1, pause: 450 },
+          { text: "למטה המכנה מספר לכמה חלקים חילקנו,", lyricIndex: 0, pause: 350 },
+          { text: "למעלה המונה סופר כמה משולשים לקחנו!", lyricIndex: 1, pause: 400 },
+          { text: "בחיבור שברים חובה מכנה משותף ואחיד,", lyricIndex: 2, pause: 350 },
+          { text: "ובכפל? מונה במונה, ומכנה במכנה תמיד!", lyricIndex: 3, pause: 500 }
+        ],
+        story: "חתכנו מגש פיצה ל-8 משולשים שווים. המספר 8 יושב למטה ב'מכנה'. אם אכלנו 3 משולשים, המספר 3 יושב למעלה ב'מונה' (כי הוא מונה וסופר כמה לקחנו). קיבלנו שלוש שמיניות!",
+        secret: "💡 הכלל בקצרה: מונה למעלה (כמה לקחנו), מכנה למטה (לכמה חילקנו את השלם). בחיבור מחברים רק את המונים כשהמכנה זהה!",
+        labType: "fractions",
+        questions: [
+          {
+            q: "כמה הם 2/7 + 3/7 ?",
+            options: ["5/7 (מחברים רק מונים, המכנה נשאר 7)", "5/14", "6/7"],
+            correct: 0,
+            praise: "אלופי הפיצה! כשהמכנה זהה מחברים רק את המונים: 2 ועוד 3 שווה 5 שביעיות!"
+          },
+          {
+            q: "איזה שבר שווה בדיוק לחצי (1/2) אחרי הרחבה פי 4?",
+            options: ["4/8", "1/8", "2/6"],
+            correct: 0,
+            praise: "מצוין! 4 משולשים מתוך 8 הם בדיוק חצי מגש פיצה!"
+          }
+        ]
+      },
+      {
+        id: 7,
+        icon: "🎯",
+        name: "עשרוני ואחוזים",
+        title: "תחנה 7: הנקודה הקופצת והאחוזים",
+        lyrics: [
+          "נְקֻדָּה מִתַּחַת לִנְקֻדָּה כְּשֶׁמְּחַבְּרִים בִּמְאֻנָּךְ,",
+          "בְּכֶפֶל בְּעֶשֶׂר הִיא קוֹפֶצֶת יָמִינָה וְהַמִּסְפָּר צָמַח!",
+          "וְאָחוּז הוּא פָּשׁוּט חֵלֶק מִתּוֹךְ מֵאָה עֲגֻלָּה,",
+          "חֲמִשִּׁים אָחוּז הֵם חֵצִי – זֹאת כָּל הַתּוֹרָה כֻּלָּה!"
+        ],
+        phoneticChunks: [
+          { text: "תחנה שביעית, הנקודה הקופצת והאחוזים!", lyricIndex: -1, pause: 450 },
+          { text: "נקודה מתחת לנקודה כשמחברים במאונך,", lyricIndex: 0, pause: 350 },
+          { text: "בכפל בעשר היא קופצת ימינה והמספר צמח!", lyricIndex: 1, pause: 400 },
+          { text: "ואחוז הוא פשוט חלק מתוך מאה עגולה,", lyricIndex: 2, pause: 350 },
+          { text: "חמישים אחוז הם חצי, זאת כל התורה כולה!", lyricIndex: 3, pause: 500 }
+        ],
+        story: "הנקודה העשרונית אוהבת לקפוץ! כשכופלים ב-10 היא קופצת צעד אחד ימינה ומגדילה את המספר. ומה זה אחוז (%)? דמיינו טבלת שוקולד של 100 קוביות: 25% הם רבע טבלה, ו-50% הם בדיוק חצי!",
+        secret: "💡 הכלל בקצרה: בכפל ב-10 הנקודה זזה ימינה. אחוז (%) = מתוך 100 (50% = חצי, 25% = רבע).",
+        labType: "decimals",
+        questions: [
+          {
+            q: "כמה הם 3.4 × 10 ?",
+            options: ["34 (הנקודה זזה צעד ימינה)", "0.34", "340"],
+            correct: 0,
+            praise: "קפיצה מושלמת! הנקודה זזה צעד אחד ימינה וקיבלנו 34!"
+          },
+          {
+            q: "בחנות יש 50% הנחה על משחק שעולה 80 ש״ח. כמה נשלם?",
+            options: ["40 ש״ח (בדיוק חצי!)", "50 ש״ח", "30 ש״ח"],
+            correct: 0,
+            praise: "מדהים! 50 אחוז הם חצי, וחצי מ-80 הם 40 שקלים!"
+          }
+        ]
+      },
+      {
+        id: 8,
+        icon: "🏡",
+        name: "היקף ושטח",
+        title: "תחנה 8: האדריכלים – הגדר והדשא",
+        lyrics: [
+          "הַהֶקֵּף הוּא הַגָּדֵר שֶׁמַּקִּיפָה אֶת הַגִּנָּה,",
+          "נְחַבֵּר אֶת כָּל הַצְּלָעוֹת מִפִּנָּה וְעַד פִּנָּה!",
+          "וְהַשֶּׁטַח הוּא הַדֶּשֶׁא שֶׁצּוֹמֵחַ מִבִּפְנִים,",
+          "אֹרֶךְ כָּפוּל רֹחַב – וּמְגַלִּים כַּמָּה רִבּוּעִים נִכְנָסִים!"
+        ],
+        phoneticChunks: [
+          { text: "תחנה שמינית ואחרונה, היקף ושטח בגאומטריה!", lyricIndex: -1, pause: 450 },
+          { text: "ההיקף הוא הגדר שמקיפה את הגינה,", lyricIndex: 0, pause: 350 },
+          { text: "נחבר את כל הצלעות מפינה ועד פינה!", lyricIndex: 1, pause: 400 },
+          { text: "והשטח הוא הדשא שצומח מבפנים,", lyricIndex: 2, pause: 350 },
+          { text: "אורך כפול רוחב, ומגלים כמה ריבועים נכנסים!", lyricIndex: 3, pause: 500 }
+        ],
+        story: "כדי לא להתבלבל לעולם בין היקף לשטח, זכרו את גינת הבית: ההיקף הוא ה'גדר' שמסביב (מחברים את אורך כל הצלעות), והשטח הוא מרבד ה'דשא' שבפנים (במלבן: כופלים אורך ברוחב)!",
+        secret: "💡 הכלל בקצרה: היקף = חיבור כל הצלעות מסביב (הגדר). שטח מלבן = אורך × רוחב (הדשא בפנים).",
+        labType: "geometry",
+        questions: [
+          {
+            q: "גינה בצורת מלבן שאורכה 5 מטרים ורוחבה 3 מטרים. מה השטח שלה (הדשא)?",
+            options: ["15 מ״ר (5 × 3)", "8 מ״ר", "16 מ״ר"],
+            correct: 0,
+            praise: "אדריכלים מצטיינים! שטח מלבן הוא אורך כפול רוחב: 5 כפול 3 שווה 15!"
+          },
+          {
+            q: "ומה ההיקף (אורך הגדר מסביב) של אותה גינה (5 על 3)?",
+            options: ["16 מטרים (5 + 3 + 5 + 3)", "15 מטרים", "8 מטרים"],
+            correct: 0,
+            praise: "אלופים! חיברנו את כל 4 צלעות הגדר מסביב וקיבלנו 16 מטרים!"
+          }
+        ]
+      }
+    ];
+
+    let currentStationIdx = 0;
+    let currentQuestionIdx = 0;
+    let stars = 0;
+    let completedStations = new Set();
+
+    // Speech & Audio State
+    let availableVoices = [];
+    let selectedVoice = null;
+    let isNarrating = false;
+    let narrationTimeout = null;
+    let audioCtx = null;
+    let customRecordings = {}; // stationId -> Audio Blob URL
+    let mediaRecorder = null;
+    let recordedChunks = [];
+    let currentCustomAudio = null;
+
+    function initApp() {
+      renderStationsNav();
+      loadStation(0);
+      initSpeechEngine();
+    }
+
+    // --- Upgraded Natural Speech & Voice Studio Engine ---
+    function initSpeechEngine() {
+      if (!('speechSynthesis' in window)) return;
+
+      const populateVoices = () => {
+        const allVoices = window.speechSynthesis.getVoices();
+        const selectEl = document.getElementById('voiceSelect');
+        selectEl.innerHTML = '';
+
+        // Filter Hebrew voices first
+        const hebrewVoices = allVoices.filter(v =>
+          v.lang.toLowerCase().includes('he') || v.lang.toLowerCase().includes('iw')
+        );
+
+        // Rank natural/premium voices first (Carmit, Avri, Hila, Google, Natural)
+        hebrewVoices.sort((a, b) => {
+          const score = (v) => {
+            const n = v.name.toLowerCase();
+            if (n.includes('natural') || n.includes('online')) return 10;
+            if (n.includes('carmit') || n.includes('hila') || n.includes('avri')) return 8;
+            if (n.includes('google')) return 6;
+            return 1;
+          };
+          return score(b) - score(a);
+        });
+
+        availableVoices = hebrewVoices.length > 0 ? hebrewVoices : allVoices;
+
+        availableVoices.forEach((voice, idx) => {
+          const opt = document.createElement('option');
+          opt.value = idx;
+          opt.textContent = `${voice.name} (${voice.lang})`;
+          selectEl.appendChild(opt);
+        });
+
+        if (availableVoices.length > 0) {
+          selectedVoice = availableVoices[0];
+        }
+      };
+
+      populateVoices();
+      window.speechSynthesis.onvoiceschanged = populateVoices;
+    }
+
+    function saveVoicePrefs() {
+      const idx = document.getElementById('voiceSelect').value;
+      if (availableVoices[idx]) {
+        selectedVoice = availableVoices[idx];
+      }
+    }
+
+    function updateVoiceSliders() {
+      const rate = document.getElementById('rateRange').value;
+      const pitch = document.getElementById('pitchRange').value;
+      document.getElementById('rateVal').textContent = rate;
+      document.getElementById('pitchVal').textContent = pitch;
+    }
+
+    function toggleVoiceDrawer() {
+      document.getElementById('voiceDrawer').classList.toggle('open');
+    }
+
+    // Soft Music Box Chime accompaniment to make narration feel warm & musical
+    function playSoftStoryChime(noteFreq = 523.25) {
+      if (!document.getElementById('bgMelodyCheck').checked) return;
+      try {
+        if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(noteFreq, audioCtx.currentTime);
+        gain.gain.setValueAtTime(0.035, audioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.9);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start();
+        osc.stop(audioCtx.currentTime + 0.9);
+      } catch (e) {}
+    }
+
+    function stopNarration() {
+      isNarrating = false;
+      if (narrationTimeout) clearTimeout(narrationTimeout);
+      if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+      if (currentCustomAudio) {
+        currentCustomAudio.pause();
+        currentCustomAudio = null;
+      }
+      document.querySelectorAll('.lyric-line').forEach(el => el.classList.remove('speaking-now'));
+      const btn = document.getElementById('speakBtn');
+      btn.classList.remove('playing');
+      const st = STATIONS[currentStationIdx];
+      btn.innerHTML = customRecordings[st.id]
+        ? '🔊 השמע את ההקלטה האנושית שלנו!'
+        : '🔊 תקריא לי בחיוך ובקצב!';
+    }
+
+    function toggleNarration() {
+      if (isNarrating) {
+        stopNarration();
+        return;
+      }
+
+      const st = STATIONS[currentStationIdx];
+      const btn = document.getElementById('speakBtn');
+      isNarrating = true;
+      btn.classList.add('playing');
+      btn.innerHTML = '⏹️ עצור הקראה';
+
+      // If parent/kid recorded a custom human voice for this station, play that first!
+      if (customRecordings[st.id]) {
+        currentCustomAudio = new Audio(customRecordings[st.id]);
+        currentCustomAudio.onended = () => stopNarration();
+        currentCustomAudio.play();
+        return;
+      }
+
+      if (!('speechSynthesis' in window)) {
+        stopNarration();
+        return;
+      }
+
+      window.speechSynthesis.cancel();
+      const chunks = st.phoneticChunks;
+      const melodyNotes = [523.25, 587.33, 659.25, 698.46, 783.99, 659.25];
+      let chunkIdx = 0;
+
+      const speakNextChunk = () => {
+        if (!isNarrating || chunkIdx >= chunks.length) {
+          stopNarration();
+          return;
+        }
+
+        const item = chunks[chunkIdx];
+        // Highlight current lyric line
+        document.querySelectorAll('.lyric-line').forEach((el, i) => {
+          el.classList.toggle('speaking-now', i === item.lyricIndex);
+        });
+
+        // Play soft background story chime before each verse line
+        playSoftStoryChime(melodyNotes[chunkIdx % melodyNotes.length]);
+
+        const utter = new SpeechSynthesisUtterance(item.text);
+        utter.lang = 'he-IL';
+        if (selectedVoice) utter.voice = selectedVoice;
+
+        const baseRate = parseFloat(document.getElementById('rateRange').value || 0.92);
+        const basePitch = parseFloat(document.getElementById('pitchRange').value || 1.05);
+
+        // Add subtle melodic variation between lines so it never sounds flat/robotic
+        utter.rate = baseRate;
+        utter.pitch = item.lyricIndex >= 0 ? basePitch + (chunkIdx % 2 === 0 ? 0.04 : -0.02) : basePitch;
+
+        utter.onend = () => {
+          if (!isNarrating) return;
+          chunkIdx++;
+          narrationTimeout = setTimeout(speakNextChunk, item.pause || 350);
+        };
+
+        utter.onerror = () => stopNarration();
+        window.speechSynthesis.speak(utter);
+      };
+
+      speakNextChunk();
+    }
+
+    // --- Custom Human Voice Recording (100% Natural Option) ---
+    async function toggleRecording() {
+      const recBtn = document.getElementById('recordBtn');
+      const st = STATIONS[currentStationIdx];
+
+      if (mediaRecorder && mediaRecorder.state === 'recording') {
+        mediaRecorder.stop();
+        recBtn.classList.remove('recording');
+        recBtn.innerHTML = '🎤 הקלט קול אנושי לתחנה זו';
+        return;
+      }
+
+      try {
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        recordedChunks = [];
+        mediaRecorder = new MediaRecorder(stream);
+
+        mediaRecorder.ondataavailable = (e) => {
+          if (e.data.size > 0) recordedChunks.push(e.data);
+        };
+
+        mediaRecorder.onstop = () => {
+          const blob = new Blob(recordedChunks, { type: 'audio/webm' });
+          customRecordings[st.id] = URL.createObjectURL(blob);
+          stream.getTracks().forEach(t => t.stop());
+          updateCustomRecordingUI();
+          toggleNarration();
+        };
+
+        mediaRecorder.start();
+        recBtn.classList.add('recording');
+        recBtn.innerHTML = '⏹️ סיים הקלטה ושמור';
+      } catch (err) {
+        alert('כדי להקליט קול אנושי יש לאפשר גישה למיקרופון בדפדפן.');
+      }
+    }
+
+    function deleteCustomRecording() {
+      const st = STATIONS[currentStationIdx];
+      delete customRecordings[st.id];
+      updateCustomRecordingUI();
+    }
+
+    function updateCustomRecordingUI() {
+      const st = STATIONS[currentStationIdx];
+      const delBtn = document.getElementById('deleteRecordBtn');
+      const speakBtn = document.getElementById('speakBtn');
+      if (customRecordings[st.id]) {
+        delBtn.style.display = 'inline-flex';
+        speakBtn.innerHTML = '🔊 השמע את ההקלטה האנושית שלנו!';
+      } else {
+        delBtn.style.display = 'none';
+        speakBtn.innerHTML = '🔊 תקריא לי בחיוך ובקצב!';
+      }
+    }
+
+    // --- Rendering Stations & Visual Labs ---
+    function renderStationsNav() {
+      const nav = document.getElementById('stationsNav');
+      nav.innerHTML = '';
+      STATIONS.forEach((st, idx) => {
+        const btn = document.createElement('button');
+        btn.className = 'station-tab' +
+          (idx === currentStationIdx ? ' active' : '') +
+          (completedStations.has(st.id) ? ' completed' : '');
+        btn.innerHTML = `<span>${st.icon}</span><span>${idx + 1}. ${st.name}</span>`;
+        btn.onclick = () => loadStation(idx);
+        nav.appendChild(btn);
+      });
+    }
+
+    function loadStation(idx) {
+      stopNarration();
+      currentStationIdx = idx;
+      currentQuestionIdx = 0;
+      const st = STATIONS[idx];
+
+      renderStationsNav();
+      document.getElementById('stationBadge').textContent = `תחנה ${idx + 1} מתוך ${STATIONS.length}`;
+      document.getElementById('stationTitle').textContent = st.title;
+
+      // Render lyrics lines
+      const lyricsEl = document.getElementById('songLyrics');
+      lyricsEl.innerHTML = st.lyrics
+        .map((line, i) => `<div class="lyric-line" data-line="${i}">${line}</div>`)
+        .join('');
+
+      document.getElementById('storyText').textContent = st.story;
+      document.getElementById('ruleSecret').textContent = st.secret;
+
+      updateCustomRecordingUI();
+      renderVisualLab(st.labType);
+
+      document.getElementById('practiceArena').classList.remove('visible');
+      document.getElementById('practiceTriggerWrap').style.display = 'block';
+    }
+
+    function renderVisualLab(type) {
+      const stage = document.getElementById('labStage');
+      if (type === 'commutative') {
+        stage.innerHTML = `
+          <div class="math-pill-display" id="commBox">🍎🍎🍎 (3) + 🍏🍏🍏🍏🍏 (5) = 8</div>
+          <button class="lab-action-btn" onclick="flipCommutative()">🔄 החלף מקומות וראה שהסכום נשאר 8!</button>
+        `;
+      } else if (type === 'associative') {
+        stage.innerHTML = `
+          <div class="math-pill-display" id="assocBox">17 + 8 + 2</div>
+          <button class="lab-action-btn" onclick="stepAssociative()">🤝 קבץ את החברים 8 ו-2 לעשרת עגולה!</button>
+        `;
+      } else if (type === 'zeroOne') {
+        stage.innerHTML = `
+          <div class="math-pill-display" id="zeroOneBox">בחר קוסם כדי להפעיל על המספר 9:</div>
+          <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
+            <button class="lab-action-btn" onclick="document.getElementById('zeroOneBox').textContent='9 × 1 = 9 (מראת הקסם!)'">🪞 הכפל ב-1</button>
+            <button class="lab-action-btn" onclick="document.getElementById('zeroOneBox').textContent='9 × 0 = 0 (האפס בלע הכול!)'">🕳️ הכפל ב-0</button>
+          </div>
+        `;
+      } else if (type === 'orderOfOps') {
+        stage.innerHTML = `
+          <div class="math-pill-display" id="orderBox">10 + 2 × (8 - 3)</div>
+          <button class="lab-action-btn" onclick="stepOrderOps()">👑 הפעל את סדר הפעולות שלב אחר שלב!</button>
+        `;
+      } else if (type === 'divisibility') {
+        stage.innerHTML = `
+          <div class="math-pill-display" id="divBox">בדוק את המספר: 126</div>
+          <button class="lab-action-btn" onclick="document.getElementById('divBox').textContent='126: זוגי (מתחלק ב-2) וגם 1+2+6=9 (מתחלק ב-3!)'">🕵️ הפעל זכוכית מגדלת של בלש!</button>
+        `;
+      } else if (type === 'fractions') {
+        stage.innerHTML = `
+          <div class="math-pill-display" id="fracBox">🍕 1/4 + 2/4 = ?</div>
+          <button class="lab-action-btn" onclick="document.getElementById('fracBox').textContent='🍕🍕🍕 = 3/4 (3 משולשים מתוך 4!)'">🍕 חבר את משולשי הפיצה!</button>
+        `;
+      } else if (type === 'decimals') {
+        stage.innerHTML = `
+          <div class="math-pill-display" id="decBox">2.5 × 10</div>
+          <button class="lab-action-btn" onclick="document.getElementById('decBox').textContent='2.5 × 10 = 25 (הנקודה קפצה ימינה!)'">🦘 הקפץ את הנקודה ימינה!</button>
+        `;
+      } else if (type === 'geometry') {
+        stage.innerHTML = `
+          <div class="math-pill-display" id="geoBox">מלבן: אורך 4 מ׳, רוחב 3 מ׳</div>
+          <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
+            <button class="lab-action-btn" onclick="document.getElementById('geoBox').textContent='היקף (הגדר מסביב): 4+3+4+3 = 14 מ׳'">🚧 חשב היקף (גדר)</button>
+            <button class="lab-action-btn" onclick="document.getElementById('geoBox').textContent='שטח (הדשא בפנים): 4 × 3 = 12 מ״ר'">🌿 חשב שטח (דשא)</button>
+          </div>
+        `;
+      }
+    }
+
+    let commFlipped = false;
+    function flipCommutative() {
+      commFlipped = !commFlipped;
+      const el = document.getElementById('commBox');
+      el.textContent = commFlipped
+        ? '🍏🍏🍏🍏🍏 (5) + 🍎🍎🍎 (3) = 8'
+        : '🍎🍎🍎 (3) + 🍏🍏🍏🍏🍏 (5) = 8';
+    }
+
+    let assocStep = 0;
+    function stepAssociative() {
+      assocStep = (assocStep + 1) % 3;
+      const el = document.getElementById('assocBox');
+      if (assocStep === 0) el.textContent = '17 + 8 + 2';
+      if (assocStep === 1) el.textContent = '17 + (8 + 2) = 17 + 10';
+      if (assocStep === 2) el.textContent = '17 + 10 = 27! קל ומהיר!';
+    }
+
+    let orderStep = 0;
+    function stepOrderOps() {
+      orderStep = (orderStep + 1) % 4;
+      const el = document.getElementById('orderBox');
+      if (orderStep === 0) el.textContent = '10 + 2 × (8 - 3)';
+      if (orderStep === 1) el.textContent = 'שלב 1 (סוגריים): 10 + 2 × 5';
+      if (orderStep === 2) el.textContent = 'שלב 2 (כפל): 10 + 10';
+      if (orderStep === 3) el.textContent = 'שלב 3 (חיבור): 20!';
+    }
+
+    // --- Practice Arena ---
+    function openPracticeArena() {
+      document.getElementById('practiceTriggerWrap').style.display = 'none';
+      const arena = document.getElementById('practiceArena');
+      arena.classList.add('visible');
+      currentQuestionIdx = 0;
+      renderQuestion();
+    }
+
+    function renderQuestion() {
+      const st = STATIONS[currentStationIdx];
+      const qObj = st.questions[currentQuestionIdx];
+      document.getElementById('questionText').textContent =
+        `שאלה ${currentQuestionIdx + 1} מתוך ${st.questions.length}: ${qObj.q}`;
+
+      const grid = document.getElementById('optionsGrid');
+      grid.innerHTML = '';
+      const fb = document.getElementById('feedbackBanner');
+      fb.style.display = 'none';
+      document.getElementById('nextStationBtn').style.display = 'none';
+
+      qObj.options.forEach((optText, idx) => {
+        const btn = document.createElement('button');
+        btn.className = 'option-btn';
+        btn.textContent = optText;
+        btn.onclick = () => checkAnswer(idx, btn, qObj);
+        grid.appendChild(btn);
+      });
+    }
+
+    function checkAnswer(selectedIdx, btnEl, qObj) {
+      const fb = document.getElementById('feedbackBanner');
+      fb.style.display = 'block';
+
+      if (selectedIdx === qObj.correct) {
+        btnEl.classList.add('correct');
+        playSoftStoryChime(783.99);
+        fb.style.background = '#dcfce7';
+        fb.style.color = '#14532d';
+        fb.textContent = '🌟 ' + qObj.praise;
+        stars += 5;
+        document.getElementById('starsCount').textContent = stars;
+
+        const st = STATIONS[currentStationIdx];
+        if (currentQuestionIdx + 1 < st.questions.length) {
+          setTimeout(() => {
+            currentQuestionIdx++;
+            renderQuestion();
+          }, 1800);
+        } else {
+          completedStations.add(st.id);
+          renderStationsNav();
+          document.getElementById('nextStationBtn').style.display = 'block';
+        }
+      } else {
+        btnEl.classList.add('wrong');
+        fb.style.background = '#fef3c7';
+        fb.style.color = '#92400e';
+        fb.textContent = 'כמעט! נסו להיעזר בכלל שלמדנו ולבחור בתשובה המתאימה 💡';
+      }
+    }
+
+    function goToNextStation() {
+      if (currentStationIdx + 1 < STATIONS.length) {
+        loadStation(currentStationIdx + 1);
+      } else {
+        alert('🎉 כל הכבוד! סיימתם את כל 8 התחנות בממלכת החשבון הקסומה!');
+        loadStation(0);
+      }
+    }
+
+    window.onload = initApp;
+  </script>
+</body>
+</html>
